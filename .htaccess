@@ -1,0 +1,70 @@
+RewriteEngine On
+Options All -Indexes
+
+RewriteBase /
+
+RewriteRule ^home$ index.php [L]
+RewriteRule ^login-process$ login-process.php [L]
+RewriteRule ^forgot-process$ forgot-process.php [L]
+
+RewriteRule ^authentication-forgot-password$ authentication-forgot-password.php [L]
+RewriteRule ^dashboard$ source/dashboard.php [L]
+
+RewriteRule ^add-customer$ source/add-customer.php [L]
+RewriteRule ^add-customer-process$ source/add-customer-process.php [L]
+RewriteRule ^view-customers$ source/view-customers.php [L]
+
+RewriteRule ^add-supplier$ source/add-supplier.php [L]
+RewriteRule ^add-supplier-process$ source/add-supplier-process.php [L]
+RewriteRule ^view-suppliers$ source/view-suppliers.php [L]
+RewriteRule ^supl-cylinder-details$ source/supl-cylinder-details.php [L]
+RewriteRule ^show-supplier-cylinder$ source/show-supplier-cylinder.php [L]
+RewriteRule ^get-empty-cylinder-by-gasid$ source/get-empty-cylinder-by-gasid.php [L]
+RewriteRule ^add-refilled-process$ source/add-refilled-process.php [L]
+RewriteRule ^edit-refill-chln$ source/edit-refill-chln.php [L]
+RewriteRule ^delete-refill-chln$ source/delete-refill-chln.php [L]
+RewriteRule ^delete-supplier-challan$ source/delete-supplier-challan.php [L]
+
+RewriteRule ^show-supplier-cylinder-by-challan$ source/show-supplier-cylinder-by-challan.php [L]
+
+RewriteRule ^get-cylinders-by-supId$ source/get-cylinders-by-supId.php [L]
+RewriteRule ^get-refill-cylinder-by-chlnno$ source/get-refill-cylinder-by-chlnno.php [L]
+
+RewriteRule ^add-delivery-chln$ source/add-delivery-chln.php [L]
+RewriteRule ^add-returned-cylinders$ source/add-returned-cylinders.php [L]
+RewriteRule ^add-delivered-process$ source/add-delivered-process.php [L]
+RewriteRule ^view-delivery-chln$ source/view-delivery-chln.php [L]
+RewriteRule ^delete-customer-challan$ source/delete-customer-challan.php [L]
+RewriteRule ^print-delivery-challan$ source/print-delivery-challan.php [L]
+
+
+RewriteRule ^edit-delivery-chln$ source/edit-delivery-chln.php [L]
+RewriteRule ^edit-delivery-challan$ source/edit-delivery-challan.php [L]
+RewriteRule ^delete-delivery-chln$ source/delete-delivery-chln.php [L]
+RewriteRule ^get-filled-cylinder-by-gasid$ source/get-filled-cylinder-by-gasid.php [L]
+RewriteRule ^add-cylinder$ source/add-cylinder.php [L]
+RewriteRule ^add-cylinder-process$ source/add-cylinder-process.php [L]
+RewriteRule ^view-cylinder$ source/view-cylinder.php [L]
+RewriteRule ^cust-cylinder-details$ source/cust-cylinder-details.php [L]
+RewriteRule ^show-customer-cylinder$ source/show-customer-cylinder.php [L]
+RewriteRule ^update-cylinder-status$ source/update-cylinder-status.php [L]
+RewriteRule ^get-cylinders-by-custId$ source/get-cylinders-by-custId.php [L]
+RewriteRule ^show-customers-cylinder-by-challan$ source/show-customers-cylinder-by-challan.php [L]
+RewriteRule ^get-delivered-cylinders$ source/get-delivered-cylinders.php [L]
+RewriteRule ^delete-return-challan$ source/delete-return-challan.php [L]
+RewriteRule ^add-refill-cylinder$ source/add-refill-cylinder.php [L]
+RewriteRule ^add-refill-cylinder-process$ source/add-refill-cylinder-process.php [L]
+RewriteRule ^get-refill-cylinder-by-gasid$ source/get-refill-cylinder-by-gasid.php [L]
+RewriteRule ^view-refill-cylinder$ source/view-refill-cylinder.php [L]
+RewriteRule ^delete-refill-cylinder$ source/delete-refill-cylinder.php [L]
+RewriteRule ^delete-refillcylinder-process$ source/delete-refillcylinder-process.php [L]
+RewriteRule ^track-cylinder$ source/track-cylinder.php [L]
+RewriteRule ^get-refill-cylinder-for-returnsup$ source/get-refill-cylinder-for-returnsup.php [L]
+
+
+
+
+
+RewriteRule ^logout$ source/logout.php [L]
+
+ErrorDocument 404  /basePage.php
